@@ -2,7 +2,7 @@
 
 Official website project for FAKA LAPI STREETWEAR.
 
-Township-inspired streetwear for men and women.
+Kasi-inspired streetwear for men and women.
 
 **PUT ON THE DRIP.**
 
