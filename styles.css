@@ -25,3 +25,89 @@
   .collection-edition h2{font-size:30px}
   .collection-edition img{width:30px;height:30px;max-width:30px;max-height:30px}
 }
+
+
+/* FAKA LAPI — premium visual identity refresh */
+:root{
+  --ink:#191916;
+  --paper:#f4f0e8;
+  --muted:#817b70;
+  --clay:#c45b38;
+  --clay-dark:#9f4329;
+  --olive:#73745b;
+  --line:rgba(25,25,22,.14);
+}
+body{background:var(--paper);color:var(--ink)}
+.site-header{background:#191916;border-bottom:3px solid var(--clay)}
+.primary-nav a{transition:color .2s ease}
+.primary-nav a:hover{color:#e18a68}
+.hero{background:#191916}
+.hero:before{background:linear-gradient(105deg,rgba(15,15,13,.98),rgba(25,25,22,.88) 55%,rgba(25,25,22,.34)),repeating-linear-gradient(135deg,transparent 0 45px,rgba(255,255,255,.035) 46px 47px)}
+.hero h1{letter-spacing:-.045em}
+.hero h1 span{color:#df7954}
+.hero .eyebrow,.intro .eyebrow,.section-heading .eyebrow,.about .eyebrow,.contact .eyebrow{color:var(--clay)}
+.hero-description{max-width:430px;line-height:1.8}
+.button-light{background:var(--clay);color:#fff;transition:background .2s ease,transform .2s ease}
+.button-light:hover{background:#df7954;transform:translateY(-2px)}
+.hero-logo-panel{border:1px solid rgba(255,255,255,.15);box-shadow:22px 22px 0 rgba(196,91,56,.18)}
+.hero-bottom{color:#b4aea3}
+.intro{position:relative}
+.intro:after{content:"";display:block;width:76px;height:5px;background:var(--clay);margin-top:48px}
+.intro h2{letter-spacing:-.04em}
+.intro h2 span{color:var(--clay)}
+.intro>p:last-child{color:#625e56}
+.collection{background:#e9e3d8}
+.section-heading{border-bottom:1px solid var(--line);padding-bottom:24px}
+.section-heading h2{letter-spacing:-.035em}
+.collection-title-wrap{width:100%}
+.collection-title-row{gap:14px 18px;align-items:stretch;margin-top:10px}
+.collection-edition{background:#f7f3ec;border:1px solid rgba(25,25,22,.12);border-left:4px solid var(--clay);padding:14px 18px;gap:13px;min-height:76px;flex:1 1 330px;justify-content:space-between}
+.collection-edition h2{font-size:clamp(24px,3vw,38px);line-height:.95;letter-spacing:-.025em}
+.collection-edition img{width:34px;height:34px;max-width:34px;max-height:34px;flex:0 0 auto}
+.section-index{color:var(--clay-dark);font-weight:700;white-space:nowrap}
+.collection-card{background:#f7f3ec;padding:0 12px 0;border:1px solid rgba(25,25,22,.08);transition:transform .25s ease,box-shadow .25s ease}
+.collection-card:hover{transform:translateY(-5px);box-shadow:0 16px 34px rgba(35,29,20,.10)}
+.product-image{background:#ded8cd}
+.product-image img{transition:transform .5s ease}
+.collection-card:hover .product-image img{transform:scale(1.035)}
+.card-caption{padding:18px 4px 20px}
+.card-kicker{color:var(--clay-dark);font-weight:700}
+.card-caption h3{font-size:clamp(24px,2.4vw,32px);letter-spacing:.01em}
+.arrow{color:var(--clay)}
+.new-arrivals-heading{margin-top:100px}
+.new-arrivals-heading>div h2{font-size:clamp(42px,6vw,72px)}
+.new-arrivals-grid .collection-card{padding:0 10px}
+.new-arrivals-grid .product-image{height:330px}
+.catalog-note{border-left:3px solid var(--clay);padding:10px 14px;background:rgba(255,255,255,.35);color:#615b51}
+.manifesto{background:#191916}
+.manifesto .eyebrow{color:#df7954}
+.manifesto h2 span{color:var(--clay)}
+.manifesto-inner>p:last-child{color:#d0c7ba}
+.about{background:#f4f0e8}
+.about-label span{color:var(--clay-dark)}
+.about h2{letter-spacing:-.045em}
+.about h2 span{color:var(--clay)}
+.about-copy>p{color:#625e56}
+.contact{background:#73745b;color:#fff;position:relative;overflow:hidden}
+.contact:after{content:"FL";position:absolute;right:4vw;bottom:-.25em;font:900 30vw/.8 var(--display);color:rgba(255,255,255,.07);pointer-events:none}
+.contact-inner{position:relative;z-index:1}
+.contact .eyebrow{color:#f0b49c}
+.contact h2 span{color:#e9b49f}
+.contact-inner>p:not(.eyebrow){color:#f0eee7}
+.contact-placeholder{display:inline-block;border:1px solid rgba(255,255,255,.5);padding:13px 17px;font-size:9px!important;font-weight:700;letter-spacing:1.8px}
+.site-footer{border-top:4px solid var(--clay);background:#191916}
+.footer-logo{color:#fff}
+.footer-logo span{color:#df7954}
+@media(max-width:760px){
+  .hero-logo-panel{box-shadow:10px 10px 0 rgba(196,91,56,.2)}
+  .hero h1 span{color:#df7954}
+  .section-heading{padding-bottom:18px}
+  .collection-title-row{display:grid;grid-template-columns:1fr;gap:10px}
+  .collection-edition{min-height:66px;padding:12px 13px;flex-basis:auto}
+  .collection-edition h2{font-size:clamp(23px,7vw,30px)}
+  .collection-edition img{width:30px;height:30px;max-width:30px;max-height:30px}
+  .new-arrivals-heading{margin-top:68px}
+  .new-arrivals-grid .product-image{height:390px}
+  .contact:after{font-size:65vw}
+}
+@media(hover:none){.collection-card:hover{transform:none;box-shadow:none}.collection-card:hover .product-image img{transform:none}}
