@@ -111,3 +111,11 @@ body{background:var(--paper);color:var(--ink)}
   .contact:after{font-size:65vw}
 }
 @media(hover:none){.collection-card:hover{transform:none;box-shadow:none}.collection-card:hover .product-image img{transform:none}}
+
+
+/* Our story — bilingual English and Xitsonga layout */
+.about-languages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px;margin-top:28px}
+.about-language{padding:22px 24px;background:#ebe5da;border-top:3px solid var(--clay)}
+.about-language h3{margin:0 0 14px;font-size:13px;letter-spacing:2px;color:var(--clay-dark)}
+.about-language p{margin:0;color:#625e56;line-height:1.85}
+@media(max-width:760px){.about-languages{grid-template-columns:1fr;gap:16px}.about-language{padding:19px 18px}}
