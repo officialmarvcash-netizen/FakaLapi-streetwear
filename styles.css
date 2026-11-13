@@ -159,3 +159,10 @@ body{background:var(--paper);color:var(--ink)}
 .whatsapp-order{display:inline-flex;align-items:center;gap:18px;text-decoration:none;font-weight:800}
 .contact-hint{font-size:13px;line-height:1.7;max-width:440px;margin:0!important}
 @media(max-width:760px){.contact-details{gap:16px}.whatsapp-order{width:100%;justify-content:space-between;box-sizing:border-box}}
+
+
+/* Refined WhatsApp and phone-number alignment */
+.contact-number{flex-direction:row;align-items:baseline;gap:16px;flex-wrap:wrap}
+.contact-number span{white-space:nowrap}
+.contact-number a{white-space:nowrap;line-height:1.2}
+@media(max-width:420px){.contact-number{gap:10px}.contact-number a{font-size:clamp(24px,7vw,30px)}}
