@@ -18,10 +18,10 @@
 .collection-title-row{display:flex;align-items:center;gap:28px;flex-wrap:wrap}
 .collection-edition{display:flex;align-items:center;gap:12px}
 .collection-edition h2{font-size:clamp(30px,4vw,48px)}
-.collection-edition img{display:block;width:64px;height:64px;max-width:64px;max-height:64px;object-fit:contain}
+.collection-edition img{display:block;width:38px;height:38px;max-width:38px;max-height:38px;object-fit:contain}
 @media(max-width:760px){
   .collection-title-row{gap:18px}
   .collection-edition{gap:10px}
   .collection-edition h2{font-size:30px}
-  .collection-edition img{width:48px;height:48px;max-width:48px;max-height:48px}
+  .collection-edition img{width:30px;height:30px;max-width:30px;max-height:30px}
 }
