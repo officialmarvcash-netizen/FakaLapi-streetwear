@@ -166,3 +166,8 @@ body{background:var(--paper);color:var(--ink)}
 .contact-number span{white-space:nowrap}
 .contact-number a{white-space:nowrap;line-height:1.2}
 @media(max-width:420px){.contact-number{gap:10px}.contact-number a{font-size:clamp(24px,7vw,30px)}}
+
+
+/* Product cards are direct WhatsApp enquiry links */
+a.product-order-link{display:block;color:inherit;text-decoration:none;cursor:pointer}
+a.product-order-link:focus-visible{outline:3px solid var(--clay);outline-offset:4px}
