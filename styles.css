@@ -146,3 +146,5 @@ body{background:var(--paper);color:var(--ink)}
 .founder-copy>p:last-child{max-width:590px;color:#625e56;line-height:1.9}
 .founder-mark{position:absolute;right:3vw;bottom:-.32em;font:900 26vw/.8 var(--display);color:rgba(25,25,22,.045);pointer-events:none}
 @media(max-width:760px){.founder{grid-template-columns:1fr;gap:28px}.founder-label{min-height:auto;gap:35px}.founder-copy h2{font-size:clamp(58px,16vw,90px)}.founder-mark{font-size:60vw}}
+
+.founder-vision{margin-top:28px;padding:18px 20px;border-left:3px solid var(--clay);background:rgba(255,255,255,.35);font-size:clamp(15px,2vw,22px);font-weight:800;letter-spacing:.06em;color:var(--ink)!important;line-height:1.5}
