@@ -119,3 +119,17 @@ body{background:var(--paper);color:var(--ink)}
 .about-language h3{margin:0 0 14px;font-size:13px;letter-spacing:2px;color:var(--clay-dark)}
 .about-language p{margin:0;color:#625e56;line-height:1.85}
 @media(max-width:760px){.about-languages{grid-template-columns:1fr;gap:16px}.about-language{padding:19px 18px}}
+
+
+/* OUR STORY — South Africa's 11-language selector */
+.story-language-switcher{margin-top:30px}
+.story-language-intro{margin:0 0 14px;color:var(--muted);font-size:10px;font-weight:700;letter-spacing:2px}
+.story-language-buttons{display:flex;flex-wrap:wrap;gap:9px;margin-bottom:22px}
+.story-language-button{appearance:none;border:1px solid rgba(25,25,22,.2);background:#ebe5da;color:var(--ink);padding:10px 14px;font:700 11px var(--body);cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease}
+.story-language-button:hover,.story-language-button:focus-visible{border-color:var(--clay);outline:none}
+.story-language-button.is-active{background:var(--ink);border-color:var(--ink);color:#fff}
+.story-language-panel{padding:24px 26px;background:#ebe5da;border-top:3px solid var(--clay)}
+.story-language-panel[hidden]{display:none!important}
+.story-language-panel h3{margin:0 0 14px;font-size:12px;letter-spacing:2px;color:var(--clay-dark)}
+.story-language-panel p{margin:0;color:#625e56;line-height:1.9;font-size:15px}
+@media(max-width:760px){.story-language-buttons{gap:7px}.story-language-button{padding:9px 11px;font-size:10px}.story-language-panel{padding:19px 18px}.story-language-panel p{font-size:14px}}
