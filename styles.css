@@ -133,3 +133,16 @@ body{background:var(--paper);color:var(--ink)}
 .story-language-panel h3{margin:0 0 14px;font-size:12px;letter-spacing:2px;color:var(--clay-dark)}
 .story-language-panel p{margin:0;color:#625e56;line-height:1.9;font-size:15px}
 @media(max-width:760px){.story-language-buttons{gap:7px}.story-language-button{padding:9px 11px;font-size:10px}.story-language-panel{padding:19px 18px}.story-language-panel p{font-size:14px}}
+
+
+/* Founder section */
+.founder{position:relative;display:grid;grid-template-columns: minmax(150px,.7fr) minmax(0,1.5fr);gap:40px;overflow:hidden;background:#e9e2d6}
+.founder-label{position:relative;z-index:1;display:flex;flex-direction:column;justify-content:space-between;min-height:260px}
+.founder-label span{font-size:10px;font-weight:700;letter-spacing:2px;color:var(--clay-dark)}
+.founder-copy{position:relative;z-index:1;max-width:700px}
+.founder-copy h2{margin:10px 0 18px;font-size:clamp(58px,9vw,112px);line-height:.86;letter-spacing:-.055em}
+.founder-copy h2 span{color:var(--clay)}
+.founder-copy h3{margin:0 0 18px;font-size:12px;letter-spacing:2px;color:var(--clay-dark)}
+.founder-copy>p:last-child{max-width:590px;color:#625e56;line-height:1.9}
+.founder-mark{position:absolute;right:3vw;bottom:-.32em;font:900 26vw/.8 var(--display);color:rgba(25,25,22,.045);pointer-events:none}
+@media(max-width:760px){.founder{grid-template-columns:1fr;gap:28px}.founder-label{min-height:auto;gap:35px}.founder-copy h2{font-size:clamp(58px,16vw,90px)}.founder-mark{font-size:60vw}}
