@@ -19,3 +19,23 @@ if (toggle && nav) {
 
 const year = document.querySelector('#year');
 if (year) year.textContent = new Date().getFullYear();
+
+// FAKA LAPI story language selector
+const storyLanguageButtons = document.querySelectorAll('[data-story-lang]');
+const storyLanguagePanels = document.querySelectorAll('[data-story-panel]');
+
+storyLanguageButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const selectedLanguage = button.dataset.storyLang;
+
+    storyLanguageButtons.forEach((item) => {
+      const isSelected = item === button;
+      item.classList.toggle('is-active', isSelected);
+      item.setAttribute('aria-pressed', String(isSelected));
+    });
+
+    storyLanguagePanels.forEach((panel) => {
+      panel.hidden = panel.dataset.storyPanel !== selectedLanguage;
+    });
+  });
+});
