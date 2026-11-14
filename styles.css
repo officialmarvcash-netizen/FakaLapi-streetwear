@@ -780,3 +780,26 @@ p{font-weight:400;line-height:1.8}
 @media(prefers-reduced-motion:reduce){
   .floating-whatsapp{transition:none}
 }
+
+
+
+/* WhatsApp icon — smaller, balanced proportions */
+.contact-whatsapp-link img{
+  width:20px;
+  height:20px;
+}
+.contact-number .contact-whatsapp-link{gap:8px}
+.floating-whatsapp{
+  width:48px;
+  height:48px;
+}
+.floating-whatsapp img{
+  width:30px;
+  height:30px;
+  padding:0;
+}
+@media(max-width:760px){
+  .contact-whatsapp-link img{width:19px;height:19px}
+  .floating-whatsapp{width:44px;height:44px}
+  .floating-whatsapp img{width:27px;height:27px}
+}
