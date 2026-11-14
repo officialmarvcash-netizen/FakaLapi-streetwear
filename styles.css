@@ -1444,3 +1444,48 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
 .new-arrivals-heading .looks-title em{
   -webkit-text-stroke-color:var(--gold)!important;
 }
+
+
+/* COMPLETE GOLD ACCENT PASS — all former orange borders and labels */
+:root{
+  --gold:#D6B45A;
+  --gold-deep:#B58A2D;
+  --gold-line:rgba(214,180,90,.48);
+  --gold-line-strong:rgba(214,180,90,.78);
+}
+.site-header,.site-footer,
+.hero-logo-panel,
+.collection,.collection-card,.collection-edition,
+.section-heading,.faq-list,.faq-list details,
+.catalog-note,.founder-vision,
+.about-language,.story-language-panel,
+.story-language-button,.ordering,.ordering-step,
+.new-arrivals-heading,.new-arrivals-heading:before,
+.hero-copy .eyebrow,.hero-description,
+.hero .button-light,.button-light,.ordering-button,
+.contact-placeholder,.scroll-top{
+  border-color:var(--gold-line)!important;
+}
+.site-header{border-bottom-color:var(--gold)!important}
+.site-footer{border-top-color:var(--gold)!important}
+.collection-edition{border-left-color:var(--gold)!important}
+.catalog-note,.founder-vision{border-left-color:var(--gold)!important}
+.about-language,.story-language-panel{border-top-color:var(--gold)!important}
+.new-arrivals-heading{
+  border-color:var(--gold-line-strong)!important;
+  border-left-color:var(--gold)!important;
+  border-bottom-color:var(--gold)!important;
+}
+.new-arrivals-heading .eyebrow{border-color:var(--gold-line-strong)!important}
+.story-language-button:hover,
+.story-language-button:focus-visible,
+.story-language-button.is-active{border-color:var(--gold)!important}
+.ordering-step{border-color:var(--gold-line)!important}
+.hero-description{border-left-color:var(--gold)!important}
+.hero-copy .eyebrow{border-bottom-color:var(--gold)!important}
+.hero .button-light,.button-light,.ordering-button{border-color:var(--gold)!important}
+.scroll-top{border-color:var(--gold)!important;box-shadow:0 5px 18px rgba(0,0,0,.24),0 0 0 4px rgba(214,180,90,.14)!important}
+.hero-logo-panel{box-shadow:14px 14px 0 rgba(214,180,90,.22)!important}
+@media(max-width:760px){
+  .hero-logo-panel{box-shadow:8px 8px 0 rgba(214,180,90,.24)!important}
+}
