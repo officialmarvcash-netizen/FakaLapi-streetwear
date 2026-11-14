@@ -2206,3 +2206,17 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     line-height:.98!important;
   }
 }
+
+
+/* HELP US GET BETTER — make the feedback headline even more prominent */
+.feedback-intro h2{
+  font-size:clamp(68px,8.4vw,108px)!important;
+  line-height:.92!important;
+  letter-spacing:-.05em!important;
+}
+@media(max-width:760px){
+  .feedback-intro h2{
+    font-size:clamp(58px,15vw,88px)!important;
+    line-height:.94!important;
+  }
+}
