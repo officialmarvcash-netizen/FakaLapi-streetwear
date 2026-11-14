@@ -2551,3 +2551,53 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
   .mission-accordion .accordion-copy{padding:0 8px 24px!important}
   .journey-stages{grid-template-columns:1fr!important;gap:24px!important}
 }
+
+
+/* FOUNDER — centred profile layout */
+.founder{
+  grid-template-columns:minmax(0,1fr)!important;
+  justify-items:center!important;
+  gap:26px!important;
+  text-align:center!important;
+}
+.founder-label{
+  width:100%!important;
+  min-height:0!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:12px!important;
+  text-align:center!important;
+}
+.founder-label .eyebrow,
+.founder-label span{text-align:center!important}
+.founder-copy{
+  width:100%!important;
+  max-width:820px!important;
+  margin:0 auto!important;
+  text-align:center!important;
+}
+.founder-copy>.eyebrow,
+.founder-copy h2,
+.founder-copy h3,
+.founder-copy>p{text-align:center!important}
+.founder-copy>p:not(.eyebrow){
+  max-width:680px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.founder-vision{
+  max-width:680px!important;
+  margin:28px auto 0!important;
+  border-left:0!important;
+  border-top:3px solid var(--clay)!important;
+  text-align:center!important;
+}
+@media(max-width:760px){
+  .founder{gap:22px!important;padding-left:7vw!important;padding-right:7vw!important}
+  .founder-label{gap:10px!important}
+  .founder-copy{max-width:100%!important}
+  .founder-copy h2{font-size:clamp(48px,13vw,76px)!important;line-height:.95!important}
+  .founder-copy h3{max-width:100%!important;line-height:1.6!important}
+  .founder-copy>p:not(.eyebrow){font-size:14px!important;line-height:1.8!important}
+  .founder-vision{padding:18px 12px!important;line-height:1.55!important}
+}
