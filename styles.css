@@ -2064,3 +2064,14 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
   .feedback-options label span{min-height:38px;padding:9px 11px;font-size:12px}
 }
 @media(prefers-reduced-motion:reduce){.feedback-submit{transition:none}}
+
+
+/* FOUNDER NAME — refined scale */
+.founder-copy h2{
+  font-size:clamp(44px,6.2vw,76px)!important;
+  line-height:.94!important;
+  letter-spacing:-.045em!important;
+}
+@media(max-width:760px){
+  .founder-copy h2{font-size:clamp(42px,12vw,64px)!important}
+}
