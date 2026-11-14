@@ -57,3 +57,29 @@ if (scrollTopButton) {
     });
   });
 }
+
+
+// Visitor feedback: prepare a message for the brand's WhatsApp inbox.
+const feedbackForm = document.querySelector('#visitor-feedback-form');
+if (feedbackForm) {
+  feedbackForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+    if (!feedbackForm.reportValidity()) return;
+    const data = new FormData(feedbackForm);
+    const improvements = data.getAll('improve');
+    const comments = String(data.get('comments') || '').trim();
+    const message = [
+      'Hi FAKA LAPI! I would like to share feedback about the website.',
+      '',
+      'Overall rating: ' + data.get('rating'),
+      'Ease of exploring: ' + data.get('ease'),
+      'Suggested improvements: ' + (improvements.length ? improvements.join(', ') : 'Not specified'),
+      'Additional comments: ' + (comments || 'None'),
+      '',
+      'Thank you for listening to your community!'
+    ].join('\n');
+    const status = document.querySelector('#feedback-status');
+    if (status) status.textContent = 'Your feedback is ready in WhatsApp. Please review it and tap Send.';
+    window.open('https://wa.me/27630867572?text=' + encodeURIComponent(message), '_blank', 'noopener,noreferrer');
+  });
+}
