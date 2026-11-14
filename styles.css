@@ -2475,3 +2475,79 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
   .story-language-buttons{gap:8px!important}
   .story-language-panel{padding:22px 18px!important}
 }
+
+
+/* PURPOSE BEHIND THE STYLE — centred editorial layout */
+.mission-vision-heading--compact{
+  width:100%!important;
+  max-width:900px!important;
+  margin:0 auto 30px!important;
+  text-align:center!important;
+}
+.mission-vision-heading--compact .eyebrow,
+.mission-vision-heading--compact h2{text-align:center!important}
+.mission-accordions{
+  width:100%!important;
+  max-width:920px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+}
+.mission-accordion summary{
+  position:relative!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  gap:9px!important;
+  min-height:104px!important;
+  padding:22px 52px!important;
+  text-align:center!important;
+}
+.mission-accordion .mission-vision-number,
+.mission-accordion .accordion-title{text-align:center!important}
+.mission-accordion .accordion-icon{
+  position:absolute!important;
+  right:8px!important;
+  top:50%!important;
+  transform:translateY(-50%)!important;
+}
+.mission-accordion[open] summary .accordion-icon{
+  transform:translateY(-50%) rotate(45deg)!important;
+}
+.mission-accordion .accordion-copy{
+  max-width:760px!important;
+  margin:0 auto!important;
+  text-align:center!important;
+}
+.mission-accordion .accordion-copy p{text-align:center!important}
+.journey-stages{
+  justify-items:center!important;
+  text-align:center!important;
+}
+.journey-stages>div{
+  width:100%!important;
+  max-width:260px!important;
+  padding:0!important;
+  text-align:center!important;
+}
+.journey-stages>div>span{
+  position:static!important;
+  display:block!important;
+  margin:0 auto 12px!important;
+}
+.journey-stages h4,.journey-stages p{text-align:center!important}
+.mission-vision-signoff{
+  max-width:900px!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+  text-align:center!important;
+}
+@media(max-width:760px){
+  .mission-vision-heading--compact{margin-bottom:28px!important;text-align:center!important}
+  .mission-vision-heading--compact h2{font-size:clamp(36px,8.5vw,50px)!important;line-height:1!important}
+  .mission-accordion summary{min-height:100px!important;padding:20px 42px!important}
+  .mission-accordion .accordion-icon{right:4px!important}
+  .mission-accordion .accordion-copy{padding:0 8px 24px!important}
+  .journey-stages{grid-template-columns:1fr!important;gap:24px!important}
+}
