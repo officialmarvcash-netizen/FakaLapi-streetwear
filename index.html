@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=mission-vision-accordion-1">
+  <link rel="stylesheet" href="styles.css?v=visitor-feedback-1">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -209,6 +209,52 @@
       <div class="founder-label"><p class="eyebrow">THE VISION BEHIND THE BRAND</p><span>04 / FOUNDER</span></div>
       <div class="founder-copy"><p class="eyebrow">MEET THE FOUNDER</p><h2>VALOYI<br><span>MARVIN.</span></h2><h3>MARVCASH — XIGAZA ARTIST &amp; HIP-HOP PRODUCER</h3><p>Born and raised in Matsotsosela village, Valoyi Marvin — known professionally as Marvcash — is the founder of FAKA LAPI STREETWEAR, a Xigaza artist and hip-hop producer with a vision to take the culture from the village, to the township, to the global world.</p><p class="founder-vision">FROM THE VILLAGE. TO THE TOWNSHIP. TO THE GLOBAL WORLD.</p></div>
       <div class="founder-mark" aria-hidden="true">FL</div>
+    </section>
+
+
+    <section class="visitor-feedback section-wrap" id="feedback">
+      <div class="feedback-intro">
+        <p class="eyebrow">YOUR VOICE SHAPES THE BRAND</p>
+        <h2>HELP US<br><span>GET BETTER.</span></h2>
+        <p>We’re building FAKA LAPI with our community. Tell us honestly what you think of the website — what you love, what needs work and what you’d like to see next. Your feedback helps us improve.</p>
+        <p class="feedback-note">TAKES ABOUT 1 MINUTE · NO PERSONAL DETAILS NEEDED</p>
+      </div>
+      <form class="feedback-form" id="visitor-feedback-form">
+        <fieldset class="feedback-question">
+          <legend><span>01</span> Overall, how do you rate our website?</legend>
+          <div class="feedback-options feedback-rating">
+            <label><input type="radio" name="rating" value="Excellent" required><span>Excellent</span></label>
+            <label><input type="radio" name="rating" value="Good"><span>Good</span></label>
+            <label><input type="radio" name="rating" value="Average"><span>Average</span></label>
+            <label><input type="radio" name="rating" value="Needs improvement"><span>Needs work</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="feedback-question">
+          <legend><span>02</span> Was it easy to explore the website?</legend>
+          <div class="feedback-options">
+            <label><input type="radio" name="ease" value="Very easy" required><span>Very easy</span></label>
+            <label><input type="radio" name="ease" value="Somewhat easy"><span>Somewhat easy</span></label>
+            <label><input type="radio" name="ease" value="Not easy"><span>Not easy</span></label>
+          </div>
+        </fieldset>
+        <fieldset class="feedback-question">
+          <legend><span>03</span> What should we improve? <small>(Choose any that apply)</small></legend>
+          <div class="feedback-options feedback-options--checks">
+            <label><input type="checkbox" name="improve" value="Website design"><span>Website design</span></label>
+            <label><input type="checkbox" name="improve" value="Product photos and details"><span>Product photos &amp; details</span></label>
+            <label><input type="checkbox" name="improve" value="Navigation and layout"><span>Navigation &amp; layout</span></label>
+            <label><input type="checkbox" name="improve" value="More products and styles"><span>More products &amp; styles</span></label>
+            <label><input type="checkbox" name="improve" value="Ordering information"><span>Ordering information</span></label>
+          </div>
+        </fieldset>
+        <div class="feedback-question feedback-comment">
+          <label for="feedback-comments"><span>04</span> Anything else you’d like us to know?</label>
+          <textarea id="feedback-comments" name="comments" rows="4" maxlength="700" placeholder="Share your ideas, suggestions or what you’d love to see next..."></textarea>
+        </div>
+        <button class="button feedback-submit" type="submit">SEND MY FEEDBACK <span aria-hidden="true">↗</span></button>
+        <p class="feedback-privacy">Your answers will open in WhatsApp so you can review and send them to us. Nothing is sent automatically.</p>
+        <p class="feedback-status" id="feedback-status" role="status" aria-live="polite"></p>
+      </form>
     </section>
 
     <section class="contact" id="contact">
