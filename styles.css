@@ -2149,3 +2149,27 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     font-size:clamp(29px,7.5vw,34px)!important;
   }
 }
+
+
+/* ENLARGED BRAND LOGOS — welcome and contact sections */
+.hero .hero-logo-panel{
+  width:min(42vw,500px)!important;
+}
+@media(max-width:700px){
+  .hero .hero-logo-panel{
+    width:min(52vw,205px)!important;
+    max-width:205px!important;
+  }
+}
+@media(max-width:380px){
+  .hero .hero-logo-panel{width:min(48vw,180px)!important}
+}
+.contact-logo-panel{
+  width:clamp(220px,27vw,340px)!important;
+}
+@media(max-width:760px){
+  .contact-logo-panel{
+    width:min(46vw,175px)!important;
+    max-width:175px!important;
+  }
+}
