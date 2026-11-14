@@ -2249,3 +2249,18 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     margin-bottom:20px!important;
   }
 }
+
+
+/* FEEDBACK HEADING — add a little more breathing room */
+.feedback-intro h2{
+  line-height:1.22!important;
+  letter-spacing:.005em!important;
+  margin-bottom:30px!important;
+}
+@media(max-width:760px){
+  .feedback-intro h2{
+    line-height:1.2!important;
+    letter-spacing:0!important;
+    margin-bottom:25px!important;
+  }
+}
