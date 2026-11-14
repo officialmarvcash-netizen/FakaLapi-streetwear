@@ -2374,3 +2374,12 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     max-width:230px!important;
   }
 }
+
+
+/* HEADER — make the feedback shortcut easy to spot */
+.primary-nav a.nav-feedback{
+  color:#D6B45A!important;
+}
+.primary-nav a.nav-feedback:hover{
+  color:#F0D58A!important;
+}
