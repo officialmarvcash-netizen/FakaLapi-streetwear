@@ -2137,3 +2137,15 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     margin:0 auto 24px!important;
   }
 }
+
+
+/* MISSION, VISION & JOURNEY — stronger accordion heading hierarchy */
+.mission-accordion .accordion-title{
+  font-size:clamp(27px,3.7vw,43px)!important;
+  line-height:1!important;
+}
+@media(max-width:760px){
+  .mission-accordion .accordion-title{
+    font-size:clamp(29px,7.5vw,34px)!important;
+  }
+}
