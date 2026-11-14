@@ -171,3 +171,40 @@ body{background:var(--paper);color:var(--ink)}
 /* Product cards are direct WhatsApp enquiry links */
 a.product-order-link{display:block;color:inherit;text-decoration:none;cursor:pointer}
 a.product-order-link:focus-visible{outline:3px solid var(--clay);outline-offset:4px}
+
+
+/* Storefront improvements — ordering guide, FAQ and clearer product actions */
+:focus-visible{outline:3px solid var(--clay);outline-offset:4px}
+.ordering{background:#191916;color:#f4f0e8;position:relative;overflow:hidden}
+.ordering-heading{max-width:760px}
+.ordering-heading .eyebrow,.faq-heading .eyebrow{color:var(--clay)}
+.ordering-heading h2,.faq-heading h2{font:900 clamp(54px,8vw,100px)/.86 var(--display);letter-spacing:-.045em;margin:0}
+.ordering-heading h2 span,.faq-heading h2 span{color:var(--clay)}
+.ordering-intro{max-width:510px;color:#c8c0b4;font-size:15px;line-height:1.85;margin:26px 0 0}
+.ordering-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin:54px 0 32px}
+.ordering-step{padding:24px 22px;border:1px solid rgba(244,240,232,.18);background:rgba(255,255,255,.025);min-height:190px}
+.ordering-step>span{font:800 34px var(--display);color:var(--clay)}
+.ordering-step h3{font:800 25px/1 var(--display);margin:18px 0 12px;letter-spacing:.02em}
+.ordering-step p{font-size:13px;line-height:1.8;color:#c8c0b4;margin:0}
+.ordering-button{background:var(--clay);color:#fff;transition:background .2s ease,transform .2s ease}
+.ordering-button:hover{background:#df7954;transform:translateY(-2px)}
+.faq{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:70px;background:#f4f0e8}
+.faq-heading h2{font-size:clamp(52px,7vw,88px)}
+.faq-list{border-top:1px solid var(--line)}
+.faq-list details{border-bottom:1px solid var(--line);padding:21px 0}
+.faq-list summary{cursor:pointer;list-style:none;position:relative;padding-right:35px;font-size:14px;font-weight:800;letter-spacing:.02em}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary:after{content:"+";position:absolute;right:4px;top:-5px;color:var(--clay);font:400 26px var(--body)}
+.faq-list details[open] summary:after{content:"−"}
+.faq-list details p{max-width:540px;margin:14px 35px 0 0;color:#625e56;font-size:13px;line-height:1.85}
+.product-order-link .product-image{position:relative}
+.product-order-link .product-image:after{content:"ENQUIRE ON WHATSAPP  ↗";position:absolute;left:12px;bottom:12px;padding:9px 11px;background:rgba(25,25,22,.9);color:#fff;font:700 9px var(--body);letter-spacing:1.2px}
+.coming-soon-card .product-image{position:relative}
+.coming-soon-card .product-image:after{content:"COMING SOON";position:absolute;left:12px;bottom:12px;padding:9px 11px;background:var(--clay);color:#fff;font:800 10px var(--body);letter-spacing:1.5px}
+.coming-soon-card{cursor:default}
+@media(max-width:760px){
+  .ordering-steps{grid-template-columns:1fr;gap:11px;margin:36px 0 26px}
+  .ordering-step{min-height:0;padding:21px}
+  .faq{grid-template-columns:1fr;gap:34px}
+  .faq-heading h2{font-size:clamp(54px,13vw,78px)}
+}
