@@ -2234,3 +2234,18 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     line-height:1.02!important;
   }
 }
+
+
+/* FEEDBACK HEADING — restore comfortable letter and line spacing */
+.feedback-intro h2{
+  line-height:1.12!important;
+  letter-spacing:-.025em!important;
+  margin-bottom:24px!important;
+}
+@media(max-width:760px){
+  .feedback-intro h2{
+    line-height:1.12!important;
+    letter-spacing:-.02em!important;
+    margin-bottom:20px!important;
+  }
+}
