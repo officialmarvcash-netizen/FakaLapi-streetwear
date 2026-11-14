@@ -39,3 +39,21 @@ storyLanguageButtons.forEach((button) => {
     });
   });
 });
+
+
+// Compact back-to-top control
+const scrollTopButton = document.querySelector('.scroll-top');
+if (scrollTopButton) {
+  const updateScrollTopButton = () => {
+    scrollTopButton.hidden = window.scrollY < 420;
+  };
+  window.addEventListener('scroll', updateScrollTopButton, { passive: true });
+  updateScrollTopButton();
+
+  scrollTopButton.addEventListener('click', () => {
+    window.scrollTo({
+      top: 0,
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+    });
+  });
+}
