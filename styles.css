@@ -2220,3 +2220,17 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     line-height:.94!important;
   }
 }
+
+
+/* HELP US GET BETTER — restrained, compact heading scale */
+.feedback-intro h2{
+  font-size:clamp(40px,5.2vw,62px)!important;
+  line-height:1!important;
+  letter-spacing:-.04em!important;
+}
+@media(max-width:760px){
+  .feedback-intro h2{
+    font-size:clamp(34px,8.5vw,46px)!important;
+    line-height:1.02!important;
+  }
+}
