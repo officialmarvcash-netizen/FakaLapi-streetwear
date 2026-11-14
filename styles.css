@@ -408,3 +408,33 @@ p{font-weight:400;line-height:1.8}
   .ordering-step p,.faq-list details p{font-size:14px}
   .founder-copy>p:last-child{font-size:14px}
 }
+
+
+/* Edition identity — let the logos lead, not text labels */
+.collection-title-row{align-items:stretch;gap:20px}
+.collection-edition{
+  min-height:150px;
+  flex:1 1 0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:20px 28px;
+  border:1.5px solid rgba(217,101,61,.5);
+  border-left:5px solid var(--clay);
+  background:#f7f3ec;
+}
+.collection-edition img{
+  display:block;
+  width:auto;
+  height:auto;
+  max-width:min(100%,220px);
+  max-height:112px;
+  object-fit:contain;
+  flex:0 1 auto;
+  filter:drop-shadow(0 4px 7px rgba(25,25,22,.12));
+}
+@media(max-width:760px){
+  .collection-title-row{display:grid;grid-template-columns:1fr;gap:12px}
+  .collection-edition{min-height:125px;padding:16px 20px}
+  .collection-edition img{max-width:min(100%,200px);max-height:94px}
+}
