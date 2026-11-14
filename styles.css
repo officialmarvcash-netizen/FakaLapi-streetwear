@@ -2304,3 +2304,24 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     margin:0 auto 28px!important;
   }
 }
+
+
+/* CONTACT PAGE — hard-centre and enlarge logo on narrow screens */
+.contact-inner{
+  box-sizing:border-box!important;width:100%!important;max-width:1180px!important;
+  margin-left:auto!important;margin-right:auto!important;padding-left:0!important;padding-right:0!important;
+  align-items:center!important;text-align:center!important;
+}
+.contact-logo-panel{
+  position:relative!important;inset:auto!important;transform:none!important;float:none!important;
+  display:flex!important;flex:0 0 auto!important;align-items:center!important;justify-content:center!important;
+  width:clamp(280px,34vw,410px)!important;max-width:88vw!important;margin:0 auto 38px!important;
+}
+.contact-logo-panel img{display:block!important;width:100%!important;max-width:none!important;height:auto!important;margin:0 auto!important}
+@media(max-width:760px){
+  .contact-inner{display:flex!important;flex-direction:column!important;align-items:center!important;padding:0!important}
+  .contact-logo-panel{width:min(72vw,290px)!important;max-width:290px!important;align-self:center!important;margin:0 auto 32px!important}
+  .contact-inner .eyebrow,.contact-inner h2,.contact-inner>p,.contact-inner .contact-details{
+    width:100%!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important
+  }
+}
