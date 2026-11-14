@@ -1489,3 +1489,7 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
 @media(max-width:760px){
   .hero-logo-panel{box-shadow:8px 8px 0 rgba(214,180,90,.24)!important}
 }
+
+
+/* FOOTER WORDMARK — STREETWEAR in the official gold accent */
+.site-footer .footer-logo span{color:var(--gold)!important}
