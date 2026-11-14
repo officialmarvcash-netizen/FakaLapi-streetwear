@@ -1656,3 +1656,18 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
   }
   .contact h2{font-size:clamp(64px,14vw,100px)}
 }
+
+
+/* Refine contact logo scale and spacing */
+.contact-logo-panel{
+  width:clamp(180px,22vw,280px)!important;
+  padding:clamp(16px,2vw,24px)!important;
+  right:4%!important;
+}
+@media(max-width:760px){
+  .contact-logo-panel{
+    width:min(42vw,170px)!important;
+    padding:12px!important;
+    margin:0 auto 30px!important;
+  }
+}
