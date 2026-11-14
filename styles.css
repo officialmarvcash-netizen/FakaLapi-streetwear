@@ -2325,3 +2325,33 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     width:100%!important;text-align:center!important;margin-left:auto!important;margin-right:auto!important
   }
 }
+
+
+/* CONTACT PAGE — centre WhatsApp order panel with the section content */
+.contact-inner .contact-details{
+  width:100%!important;
+  display:flex!important;
+  flex-direction:column!important;
+  align-items:center!important;
+  justify-content:center!important;
+  text-align:center!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.contact-inner .whatsapp-order{
+  align-self:center!important;
+  width:max-content!important;
+  max-width:100%!important;
+  justify-content:center!important;
+  margin-left:auto!important;
+  margin-right:auto!important;
+}
+.contact-inner .contact-hint{
+  width:100%!important;
+  max-width:440px!important;
+  margin:0 auto!important;
+  text-align:center!important;
+}
+@media(max-width:760px){
+  .contact-inner .whatsapp-order{width:min(100%,360px)!important}
+}
