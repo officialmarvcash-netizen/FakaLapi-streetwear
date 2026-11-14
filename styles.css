@@ -1607,3 +1607,52 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     box-shadow:8px 8px 0 rgba(214,180,90,.25),0 14px 35px rgba(0,0,0,.4)!important;
   }
 }
+
+
+/* CONTACT SECTION — branded logo feature */
+.contact{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(115deg,#171713 0%,#202019 58%,#121210 100%)!important;
+  color:#f4f0e8;
+  border-top:1px solid rgba(214,180,90,.38);
+}
+.contact-inner{position:relative;z-index:2;max-width:1180px;margin:0 auto}
+.contact-inner>p:not(.eyebrow){color:rgba(244,240,232,.78)}
+.contact h2{color:#f4f0e8}
+.contact h2 span{color:#D6B45A!important}
+.contact-logo-panel{
+  position:absolute;
+  top:50%;
+  right:2%;
+  transform:translateY(-50%);
+  width:clamp(250px,30vw,390px);
+  aspect-ratio:1/1;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:clamp(22px,3vw,36px);
+  background:radial-gradient(circle at 50% 45%,#302f27 0%,#1b1b17 65%,#121210 100%);
+  border:1px solid rgba(214,180,90,.72);
+  outline:1px solid rgba(214,180,90,.22);
+  outline-offset:7px;
+  box-shadow:12px 12px 0 rgba(214,180,90,.18),0 22px 55px rgba(0,0,0,.35);
+}
+.contact-logo-panel img{display:block;width:100%;height:100%;object-fit:contain;filter:drop-shadow(0 5px 12px rgba(0,0,0,.4))}
+@media(min-width:761px){
+  .contact-inner{padding-right:42%}
+}
+@media(max-width:760px){
+  .contact{padding:70px 7vw 78px!important}
+  .contact-inner{display:flex;flex-direction:column;align-items:flex-start}
+  .contact-logo-panel{
+    position:relative;
+    top:auto;right:auto;transform:none;
+    align-self:center;
+    width:min(58vw,230px);
+    padding:16px;
+    margin:0 auto 42px;
+    box-shadow:8px 8px 0 rgba(214,180,90,.2),0 14px 32px rgba(0,0,0,.35);
+  }
+  .contact h2{font-size:clamp(64px,14vw,100px)}
+}
