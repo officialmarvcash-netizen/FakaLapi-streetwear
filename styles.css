@@ -438,3 +438,23 @@ p{font-weight:400;line-height:1.8}
   .collection-edition{min-height:125px;padding:16px 20px}
   .collection-edition img{max-width:min(100%,200px);max-height:94px}
 }
+
+
+/* Quiet edition labels — logos remain the main focus */
+.collection-edition{
+  flex-direction:column;
+  gap:8px;
+}
+.edition-label{
+  display:block;
+  color:#82796d;
+  font-family:var(--body);
+  font-size:9px;
+  font-weight:400;
+  line-height:1;
+  letter-spacing:1.8px;
+  text-align:center;
+}
+@media(max-width:760px){
+  .edition-label{font-size:9px;letter-spacing:1.6px}
+}
