@@ -263,3 +263,148 @@ a.product-order-link:focus-visible{outline:3px solid var(--clay);outline-offset:
   .collection-card{border-width:1.5px}
   .hero-logo-panel{box-shadow:9px 9px 0 rgba(217,101,61,.22),0 0 18px rgba(217,101,61,.12)}
 }
+
+
+/* FAKA LAPI — clearer typography and stronger text hierarchy */
+body{
+  font-size:15px;
+  line-height:1.7;
+  font-weight:400;
+  letter-spacing:0;
+}
+p{font-weight:400;line-height:1.8}
+.primary-nav a{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:1.25px;
+}
+.eyebrow,.section-index,.card-kicker,.story-language-intro{
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:1.8px;
+}
+.hero h1{
+  font-weight:900;
+  line-height:.88;
+  letter-spacing:-.055em;
+}
+.hero-description{
+  font-size:clamp(15px,1.35vw,17px);
+  line-height:1.85;
+  font-weight:400;
+}
+.intro h2,.manifesto h2,.about h2,.contact h2{
+  font-weight:800;
+  line-height:.9;
+}
+.section-heading h2,.ordering-heading h2,.faq-heading h2{
+  font-weight:800;
+  line-height:.96;
+  letter-spacing:-.035em;
+}
+.intro>p:last-child,.about-copy>p{
+  font-size:clamp(15px,1.2vw,17px);
+  line-height:1.9;
+  font-weight:400;
+}
+.card-caption h3{
+  font-weight:700;
+  font-size:clamp(23px,2.1vw,29px);
+  line-height:1.05;
+  letter-spacing:0;
+}
+.card-caption{align-items:flex-start}
+.collection-edition h2{
+  font-weight:700;
+  line-height:1;
+  letter-spacing:-.015em;
+}
+.ordering-step h3{
+  font-weight:700;
+  font-size:26px;
+  line-height:1.05;
+  letter-spacing:0;
+}
+.ordering-step p,.faq-list details p{
+  font-size:14px;
+  line-height:1.85;
+  font-weight:400;
+}
+.faq-list summary{
+  font-size:15px;
+  font-weight:600;
+  line-height:1.5;
+  letter-spacing:0;
+}
+.story-language-button{
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:.01em;
+}
+.story-language-panel h3,.about-language h3{
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1.5px;
+}
+.story-language-panel p,.about-language p{
+  font-size:15px;
+  line-height:1.9;
+  font-weight:400;
+}
+.founder-copy h2{
+  font-weight:800;
+  line-height:.92;
+}
+.founder-copy h3{
+  font-size:11px;
+  font-weight:600;
+  line-height:1.6;
+  letter-spacing:1.5px;
+}
+.founder-copy>p:last-child{
+  font-size:15px;
+  line-height:1.9;
+  font-weight:400;
+}
+.founder-vision{
+  font-size:clamp(14px,1.5vw,18px);
+  font-weight:700;
+  line-height:1.55;
+  letter-spacing:.035em;
+}
+.button,.ordering-button,.whatsapp-order{
+  font-size:11px;
+  font-weight:700;
+  letter-spacing:1.1px;
+}
+.contact-number a{
+  font-weight:700;
+  letter-spacing:0;
+}
+.contact-hint,.contact-inner>p:not(.eyebrow){
+  font-size:15px;
+  line-height:1.85;
+  font-weight:400;
+}
+.catalog-note{
+  font-size:12px;
+  line-height:1.75;
+  font-weight:400;
+}
+.site-footer p,.site-footer small{
+  font-size:10px;
+  font-weight:500;
+  line-height:1.6;
+  letter-spacing:1px;
+}
+@media(max-width:760px){
+  body{font-size:14px}
+  .hero-description{font-size:15px;line-height:1.8}
+  .intro>p:last-child,.about-copy>p,.story-language-panel p,.about-language p{
+    font-size:14px;
+    line-height:1.85;
+  }
+  .card-caption h3{font-size:26px}
+  .ordering-step p,.faq-list details p{font-size:14px}
+  .founder-copy>p:last-child{font-size:14px}
+}
