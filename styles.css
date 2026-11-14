@@ -2075,3 +2075,46 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
 @media(max-width:760px){
   .founder-copy h2{font-size:clamp(42px,12vw,64px)!important}
 }
+
+
+/* WELCOME LOGO — standalone artwork, no frame or panel */
+.hero .hero-logo-panel{
+  background:transparent!important;
+  border:0!important;
+  outline:0!important;
+  outline-offset:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+}
+.hero .hero-logo-panel img{
+  filter:none!important;
+}
+@media(max-width:700px){
+  .hero{
+    min-height:0!important;
+    padding:44px 8vw 76px!important;
+    flex-direction:column!important;
+    align-items:stretch!important;
+  }
+  .hero .hero-logo-panel{
+    position:relative!important;
+    order:-1!important;
+    top:auto!important;
+    right:auto!important;
+    transform:none!important;
+    align-self:center!important;
+    width:min(39vw,150px)!important;
+    max-width:150px!important;
+    height:auto!important;
+    aspect-ratio:1/1!important;
+    margin:0 auto 28px!important;
+    opacity:1!important;
+  }
+  .hero .hero-copy{
+    max-width:100%!important;
+    width:100%!important;
+  }
+}
+@media(max-width:380px){
+  .hero .hero-logo-panel{width:min(35vw,128px)!important}
+}
