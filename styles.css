@@ -1671,3 +1671,50 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
     margin:0 auto 30px!important;
   }
 }
+
+
+/* FAKA LAPI image-panel treatment — subtle branded texture */
+:root{--panel-art:url("ttttt.jpg.png")}
+.story-language-panel,
+.about-language,
+.ordering-step,
+.faq-list details,
+.collection-edition,
+.story-language-switcher,
+.contact-logo-panel{
+  background-image:
+    linear-gradient(135deg,rgba(12,12,12,.91),rgba(20,19,16,.84)),
+    var(--panel-art)!important;
+  background-size:cover!important;
+  background-position:center!important;
+  background-repeat:no-repeat!important;
+  background-blend-mode:normal!important;
+}
+.story-language-panel,
+.about-language,
+.ordering-step,
+.faq-list details,
+.collection-edition{
+  background-color:#14130f!important;
+  border-color:rgba(214,180,90,.58)!important;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.035),0 14px 34px rgba(0,0,0,.22);
+}
+.story-language-panel:hover,
+.about-language:hover,
+.ordering-step:hover,
+.collection-edition:hover{
+  background-image:
+    linear-gradient(135deg,rgba(12,12,12,.84),rgba(20,19,16,.74)),
+    var(--panel-art)!important;
+  border-color:rgba(214,180,90,.82)!important;
+}
+.faq-list details[open]{
+  background-image:
+    linear-gradient(135deg,rgba(12,12,12,.82),rgba(20,19,16,.75)),
+    var(--panel-art)!important;
+}
+@media(max-width:760px){
+  .story-language-panel,.about-language,.ordering-step,.faq-list details,.collection-edition,.story-language-switcher,.contact-logo-panel{
+    background-position:center!important;
+  }
+}
