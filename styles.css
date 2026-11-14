@@ -536,3 +536,14 @@ p{font-weight:400;line-height:1.8}
 .new-arrivals-heading .looks-title em{color:#e66b43;font-family:"Anton","Barlow Condensed",Impact,sans-serif;font-size:1em;font-style:normal;letter-spacing:.015em;-webkit-text-stroke:.4px #e66b43}
 .new-arrivals-heading .section-index{position:relative;z-index:1;flex:0 0 auto;margin:0 0 5px;padding:8px 0 8px 16px;color:#e9a34c;border-left:1px solid rgba(233,163,76,.55);font-family:"Barlow Condensed",sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;white-space:nowrap}
 @media(max-width:760px){.new-arrivals-heading{align-items:flex-start;flex-direction:column;gap:15px;margin-top:38px;margin-bottom:22px;padding:21px 18px 18px;border-left-width:5px;box-shadow:5px 5px 0 rgba(169,67,39,.13)}.new-arrivals-heading .eyebrow{margin-bottom:10px;font-size:10px}.new-arrivals-heading .looks-title{gap:0 .16em;font-size:clamp(43px,11.5vw,70px);line-height:1}.new-arrivals-heading .looks-title span:first-child{font-size:.34em}.new-arrivals-heading .section-index{margin:0;padding:0 0 0 10px;font-size:10px}}
+
+
+/* COMING SOON — distinct signal yellow */
+.coming-soon-card .product-image:after{
+  background:#f2c230;
+  color:#191916;
+  border:1px solid #d9a916;
+  box-shadow:0 3px 12px rgba(25,25,22,.18);
+  font-weight:800;
+  letter-spacing:1.6px;
+}
