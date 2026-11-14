@@ -14,7 +14,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=product-carousel-1">
+  <link rel="stylesheet" href="styles.css?v=welcome-art-blend-1">
   <script src="script.js" defer></script>
 </head>
 <body>
@@ -63,7 +63,9 @@
         </a>
         <a class="collection-card product-order-link card-three" href="https://wa.me/27630867572?text=Hi%20FAKA%20LAPI%2C%20I'm%20interested%20in%3A%20CREWNECK%20SWEATSHIRT.%20Please%20share%20the%20price%2C%20available%20sizes%20and%20ordering%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about CREWNECK SWEATSHIRT on WhatsApp">
           <div class="product-image"><img src="WhatsApp%20Image%202026-11-12%20at%2012.34.19.jpeg" alt="FAKA LAPI white sweatshirt with black logo" loading="lazy"></div>
-          <div class="card-caption"><div><span class="card-kicker">03 / EVERYDAY DRIP</span><h3>CREWNECK SWEATSHIRT</h3></div><span class="arrow" aria-hidden="true">↗</span></d</div><div class="carousel-controls" aria-label="Featured products navigation"><button class="carousel-arrow" type="button" data-direction="-1" aria-label="Scroll Featured products left">←</button><div class="carousel-progress" aria-hidden="true"><span></span></div><button class="carousel-arrow" type="button" data-direction="1" aria-label="Scroll Featured products right">→</button></div></div>
+          <div class="card-caption"><div><span class="card-kicker">03 / EVERYDAY DRIP</span><h3>CREWNECK SWEATSHIRT</h3></div><span class="arrow" aria-hidden="true">↗</span></div>
+        </a>
+      </div><div class="carousel-controls" aria-label="Featured products navigation"><button class="carousel-arrow" type="button" data-direction="-1" aria-label="Scroll Featured products left">←</button><div class="carousel-progress" aria-hidden="true"><span></span></div><button class="carousel-arrow" type="button" data-direction="1" aria-label="Scroll Featured products right">→</button></div></div>
       <div class="section-heading new-arrivals-heading">
         <div><p class="eyebrow">JUST ADDED</p><h2 class="looks-title"><span>MORE</span><span>FAKA LAPI</span><em>LOOKS</em></h2></div>
         <span class="section-index">02 / NEW ARRIVALS</span>
@@ -107,7 +109,9 @@
         </a>
         <a class="collection-card product-order-link" href="https://wa.me/27630867572?text=Hi%20FAKA%20LAPI%2C%20I'm%20interested%20in%3A%20LAPI%20HENHLA%20%E2%80%94%20CREWNECK%20SWEATSHIRT.%20Please%20share%20the%20price%2C%20available%20sizes%20and%20ordering%20details." target="_blank" rel="noopener noreferrer" aria-label="Enquire about LAPI HENHLA — CREWNECK SWEATSHIRT on WhatsApp">
           <div class="product-image"><img src="WhatsApp%20Image%202026-11-12%20at%2012.34.22%20(1).jpeg" alt="FAKA LAPI LAPI HENHLA red crewneck sweatshirt" loading="lazy"></div>
-          <div class="card-caption"><div><span class="card-kicker">NEW DROP / 15</span><h3>LAPI HENHLA — CREWNECK SWEATSHIRT</h3></div><span class="arrow" aria-hidden=</div><div class="carousel-controls" aria-label="New arrivals navigation"><button class="carousel-arrow" type="button" data-direction="-1" aria-label="Scroll New arrivals left">←</button><div class="carousel-progress" aria-hidden="true"><span></span></div><button class="carousel-arrow" type="button" data-direction="1" aria-label="Scroll New arrivals right">→</button></div></div>
+          <div class="card-caption"><div><span class="card-kicker">NEW DROP / 15</span><h3>LAPI HENHLA — CREWNECK SWEATSHIRT</h3></div><span class="arrow" aria-hidden="true">↗</span></div>
+        </a>
+      </div><div class="carousel-controls" aria-label="New arrivals navigation"><button class="carousel-arrow" type="button" data-direction="-1" aria-label="Scroll New arrivals left">←</button><div class="carousel-progress" aria-hidden="true"><span></span></div><button class="carousel-arrow" type="button" data-direction="1" aria-label="Scroll New arrivals right">→</button></div></div>
       <p class="catalog-note">Explore the FAKA LAPI looks. To ask about sizes, prices or availability, contact us on WhatsApp.</p>
     </section>
 
@@ -194,7 +198,7 @@
       const controls=carousel.querySelector('.carousel-controls');
       const progress=controls.querySelector('.carousel-progress span');
       const arrows=controls.querySelectorAll('.carousel-arrow');
-      const step=()=> {
+      const step=()=>{
         const card=track.querySelector('.collection-card');
         if(!card) return track.clientWidth;
         const gap=parseFloat(getComputedStyle(track).columnGap)||18;
@@ -202,17 +206,13 @@
       };
       const update=()=>{
         const max=track.scrollWidth-track.clientWidth;
-        const ratio=max>0?track.scrollLeft/max:0;
         progress.style.width=(max>0?Math.max(12,Math.min(100,(track.clientWidth/track.scrollWidth)*100)):100)+'%';
-        progress.parentElement.setAttribute('aria-valuenow',String(Math.round(ratio*100)));
         arrows[0].disabled=track.scrollLeft<=2;
         arrows[1].disabled=track.scrollLeft>=max-2;
       };
-      arrows.forEach((button)=>{
-        button.addEventListener('click',()=>{
-          track.scrollBy({left:Number(button.dataset.direction)*step(),behavior:'smooth'});
-        });
-      });
+      arrows.forEach((button)=>button.addEventListener('click',()=>{
+        track.scrollBy({left:Number(button.dataset.direction)*step(),behavior:'smooth'});
+      }));
       track.addEventListener('scroll',update,{passive:true});
       window.addEventListener('resize',update);
       update();
