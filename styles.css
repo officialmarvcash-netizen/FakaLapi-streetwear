@@ -870,3 +870,10 @@ p{font-weight:400;line-height:1.8}
   .whatsapp-order img{width:25px;height:25px;flex-basis:25px}
 }
 @media(prefers-reduced-motion:reduce){.whatsapp-order{transition:none}}
+
+
+/* First-page edition logos — clean white frames */
+.collection-edition{
+  border-color:#fff !important;
+  border-left-color:#fff !important;
+}
