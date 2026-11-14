@@ -1493,3 +1493,63 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
 
 /* FOOTER WORDMARK — STREETWEAR in the official gold accent */
 .site-footer .footer-logo span{color:var(--gold)!important}
+
+
+/* FINAL BRAND-WIDE GOLD CONVERSION — remove remaining clay/orange accents */
+:root{
+  --clay:#D6B45A;
+  --clay-dark:#B58A2D;
+  --line-brand:rgba(214,180,90,.42);
+  --line-brand-strong:#D6B45A;
+  --gold:#D6B45A;
+  --gold-deep:#B58A2D;
+  --gold-line:rgba(214,180,90,.48);
+  --gold-line-strong:rgba(214,180,90,.78);
+}
+.site-header,.site-footer{border-color:#D6B45A!important}
+.primary-nav a:hover,.hero h1 span,.hero-copy .eyebrow,.hero-copy .eyebrow span,
+.hero-bottom span:last-child,.intro .eyebrow,.intro h2 span,.section-heading .eyebrow,
+.section-index,.card-kicker,.card-caption .card-kicker,.arrow,
+.new-arrivals-heading .looks-title em,.new-arrivals-heading .section-index,
+.manifesto .eyebrow,.manifesto h2 span,.about .eyebrow,.about-label span,
+.about h2 span,.founder .eyebrow,.founder-label span,.founder-copy h2 span,
+.founder-copy h3,.ordering-heading .eyebrow,.ordering-heading h2 span,
+.faq-heading .eyebrow,.faq-heading h2 span,.ordering-step>span,
+.story-language-panel h3,.about-language h3,.scroll-top span{
+  color:#D6B45A!important;
+}
+.hero-copy .eyebrow{border-bottom-color:#D6B45A!important}
+.hero h1 span,.new-arrivals-heading .looks-title em{-webkit-text-stroke-color:#D6B45A!important}
+.hero-logo-panel{box-shadow:14px 14px 0 rgba(214,180,90,.22)!important}
+.hero:after{background:linear-gradient(145deg,rgba(214,180,90,.12),transparent 58%)!important}
+.hero-copy .eyebrow{background:rgba(214,180,90,.08)!important}
+.hero-description{border-color:#D6B45A!important}
+.intro:after{background:#D6B45A!important}
+.collection-edition,.collection-card,.section-heading,.faq-list,.faq-list details,
+.catalog-note,.founder-vision,.about-language,.story-language-panel,
+.story-language-button,.ordering-step,.new-arrivals-heading,
+.contact-placeholder,.scroll-top,.hero-logo-panel{
+  border-color:rgba(214,180,90,.48)!important;
+}
+.collection-edition{border-left-color:#D6B45A!important}
+.catalog-note,.founder-vision{border-left-color:#D6B45A!important}
+.about-language,.story-language-panel{border-top-color:#D6B45A!important}
+.story-language-button:hover,.story-language-button:focus-visible,
+.story-language-button.is-active{border-color:#D6B45A!important}
+.new-arrivals-heading{border-left-color:#D6B45A!important;border-bottom-color:#D6B45A!important}
+.ordering-step{border-color:rgba(214,180,90,.48)!important}
+.contact{background:#D6B45A!important}
+.contact:after{color:rgba(25,25,22,.10)!important}
+.contact .eyebrow,.contact h2 span{color:#191916!important}
+.contact-number span{color:#191916!important}
+.hero .button-light,.button-light,.ordering-button{
+  background:#D6B45A!important;border-color:#D6B45A!important;color:#191916!important;
+}
+.hero .button-light:hover,.button-light:hover,.ordering-button:hover{
+  background:#B58A2D!important;border-color:#B58A2D!important;color:#191916!important;
+}
+.scroll-top{border-color:#D6B45A!important;box-shadow:0 5px 18px rgba(0,0,0,.24),0 0 0 4px rgba(214,180,90,.14)!important}
+.scroll-top:hover{background:#D6B45A!important;border-color:#D6B45A!important}
+@media(max-width:760px){
+  .hero-logo-panel{box-shadow:8px 8px 0 rgba(214,180,90,.24)!important}
+}
