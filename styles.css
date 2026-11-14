@@ -547,3 +547,92 @@ p{font-weight:400;line-height:1.8}
   font-weight:800;
   letter-spacing:1.6px;
 }
+
+
+/* FAKA LAPI — refined stronger border system */
+:root{
+  --line-strong:rgba(25,25,22,.24);
+  --line-brand:rgba(169,67,39,.48);
+  --line-brand-strong:#c65332;
+}
+/* Clearer separation between major sections */
+.intro,.about,.founder,.faq{
+  border-top:2px solid var(--line-brand);
+  border-bottom:1px solid rgba(25,25,22,.12);
+}
+.collection{
+  border-top:3px solid rgba(169,67,39,.34);
+  border-bottom:3px solid rgba(169,67,39,.34);
+}
+.manifesto,.ordering{
+  border-top:2px solid rgba(217,101,61,.5);
+  border-bottom:2px solid rgba(217,101,61,.5);
+}
+/* Stronger framing for product photography and product cards */
+.collection-card{
+  border:2px solid rgba(169,67,39,.42);
+  padding:0 10px 0;
+}
+.product-image{
+  border:1px solid rgba(25,25,22,.18);
+  outline:1px solid rgba(255,255,255,.55);
+  outline-offset:-4px;
+}
+.new-arrivals-grid .collection-card{
+  border-width:2px;
+}
+/* Edition panels: distinct but not louder than their logos */
+.collection-edition{
+  border:2px solid rgba(217,101,61,.55);
+  border-left:6px solid var(--clay);
+}
+/* Text and information panels */
+.story-language-panel,.about-language{
+  border:2px solid rgba(217,101,61,.48);
+  border-top:5px solid var(--clay);
+}
+.ordering-step{
+  border:2px solid rgba(217,101,61,.62);
+}
+.founder-vision,.catalog-note{
+  border:1.5px solid rgba(217,101,61,.42);
+  border-left:5px solid var(--clay);
+}
+/* More visible but tidy controls and separators */
+.story-language-button{
+  border:1.5px solid rgba(169,67,39,.48);
+}
+.story-language-button.is-active{
+  border:2px solid var(--clay);
+}
+.faq-list{
+  border-top:2px solid rgba(169,67,39,.48);
+}
+.faq-list details{
+  border-bottom:1.5px solid rgba(169,67,39,.35);
+}
+.section-heading{
+  border-bottom:2px solid rgba(169,67,39,.28);
+}
+.new-arrivals-heading{
+  border:1.5px solid rgba(217,101,61,.62);
+  border-left:7px solid var(--clay);
+  border-bottom:4px solid var(--clay);
+}
+/* Brand edges on the page frame */
+.site-header{border-bottom-width:5px}
+.site-footer{border-top-width:5px}
+.hero-logo-panel{
+  border:2px solid rgba(217,101,61,.72);
+}
+.button,.ordering-button,.whatsapp-order{
+  outline-offset:3px;
+}
+@media(max-width:760px){
+  .collection-card{border-width:1.5px;padding-left:7px;padding-right:7px}
+  .product-image{outline-offset:-3px}
+  .collection-edition{border-width:1.5px;border-left-width:5px}
+  .ordering-step{border-width:1.5px}
+  .story-language-panel,.about-language{border-width:1.5px;border-top-width:4px}
+  .intro,.about,.founder,.faq{border-top-width:1.5px}
+}
