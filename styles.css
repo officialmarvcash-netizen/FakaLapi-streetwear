@@ -913,3 +913,19 @@ p{font-weight:400;line-height:1.8}
   .hero h1 span{-webkit-text-stroke:1.5px #e47750}
   .hero-copy .eyebrow{padding:7px 9px;font-size:9px;letter-spacing:1.7px}
 }
+
+
+/* Welcome page logo frame — crisp white border */
+.hero-logo-panel{
+  border:2px solid #fff !important;
+  outline:1px solid rgba(255,255,255,.28);
+  outline-offset:5px;
+  box-shadow:18px 18px 0 rgba(217,101,61,.2),0 0 28px rgba(255,255,255,.08) !important;
+}
+@media(max-width:760px){
+  .hero-logo-panel{
+    border:1.5px solid #fff !important;
+    outline-offset:3px;
+    box-shadow:9px 9px 0 rgba(217,101,61,.22),0 0 18px rgba(255,255,255,.08) !important;
+  }
+}
