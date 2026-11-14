@@ -1553,3 +1553,8 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
 @media(max-width:760px){
   .hero-logo-panel{box-shadow:8px 8px 0 rgba(214,180,90,.24)!important}
 }
+
+
+/* NEW DROP 04 — preserve the full portrait so the bucket hat and T-shirt remain visible */
+.product-image--drop-four{background:#d99b9e!important}
+.product-image--drop-four img{object-fit:contain!important;object-position:center center!important;padding:0!important;transform:none!important}
