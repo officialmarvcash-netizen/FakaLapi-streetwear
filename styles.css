@@ -1401,3 +1401,46 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
   .hero-logo-panel{box-shadow:8px 8px 0 #C45B38!important}
   .contact{background:#C45B38}
 }
+
+
+/* GOLD TEXT ACCENT TEST — replace orange lettering, retain clay surfaces */
+:root{--gold:#D6B45A;--gold-deep:#B58A2D}
+.primary-nav a:hover,
+.wordmark span,
+.hero h1 span,
+.hero-copy .eyebrow,
+.hero-copy .eyebrow span,
+.hero-bottom span:last-child,
+.intro .eyebrow,
+.intro h2 span,
+.section-heading .eyebrow,
+.section-index,
+.card-kicker,
+.card-caption .card-kicker,
+.arrow,
+.new-arrivals-heading .looks-title em,
+.new-arrivals-heading .section-index,
+.manifesto .eyebrow,
+.manifesto h2 span,
+.about .eyebrow,
+.about-label span,
+.about h2 span,
+.founder .eyebrow,
+.founder-label span,
+.founder-copy h2 span,
+.founder-copy h3,
+.ordering-heading .eyebrow,
+.ordering-heading h2 span,
+.faq-heading .eyebrow,
+.faq-heading h2 span,
+.ordering-step>span,
+.story-language-panel h3,
+.about-language h3,
+.scroll-top span{
+  color:var(--gold)!important;
+}
+.hero-copy .eyebrow{color:var(--gold)!important}
+.hero-copy .eyebrow span{color:var(--gold)!important}
+.new-arrivals-heading .looks-title em{
+  -webkit-text-stroke-color:var(--gold)!important;
+}
