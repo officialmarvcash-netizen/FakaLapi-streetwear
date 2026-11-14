@@ -2355,3 +2355,22 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
 @media(max-width:760px){
   .contact-inner .whatsapp-order{width:min(100%,360px)!important}
 }
+
+
+/* WELCOME PAGE — make the standalone brand logo more prominent */
+.hero .hero-logo-panel{
+  width:min(48vw,570px)!important;
+}
+@media(max-width:700px){
+  .hero .hero-logo-panel{
+    width:min(64vw,255px)!important;
+    max-width:255px!important;
+    margin-bottom:32px!important;
+  }
+}
+@media(max-width:380px){
+  .hero .hero-logo-panel{
+    width:min(60vw,230px)!important;
+    max-width:230px!important;
+  }
+}
