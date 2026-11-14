@@ -803,3 +803,70 @@ p{font-weight:400;line-height:1.8}
   .floating-whatsapp{width:44px;height:44px}
   .floating-whatsapp img{width:27px;height:27px}
 }
+
+
+/* FAKA LAPI — signature WhatsApp order CTA */
+.whatsapp-order{
+  min-height:62px;
+  min-width:270px;
+  justify-content:space-between;
+  gap:18px;
+  padding:0 22px;
+  color:#fff;
+  background:#171914;
+  border:1.5px solid #25d366;
+  border-left:6px solid #25d366;
+  box-shadow:5px 5px 0 rgba(37,211,102,.18);
+  font-family:"Barlow Condensed",sans-serif;
+  font-size:14px;
+  font-weight:800;
+  letter-spacing:1.8px;
+  transition:transform .2s ease,background .2s ease,box-shadow .2s ease;
+}
+.whatsapp-order img{
+  display:block;
+  width:27px;
+  height:27px;
+  flex:0 0 27px;
+  object-fit:contain;
+  filter:drop-shadow(0 1px 2px rgba(0,0,0,.18));
+}
+.whatsapp-order>span:nth-child(2){flex:1;text-align:left}
+.whatsapp-order .whatsapp-order-arrow{
+  display:grid;
+  place-items:center;
+  width:28px;
+  height:28px;
+  border:1px solid rgba(37,211,102,.55);
+  border-radius:50%;
+  color:#25d366;
+  font:700 18px/1 var(--body);
+}
+.whatsapp-order:hover{
+  color:#10130f;
+  background:#25d366;
+  border-color:#25d366;
+  box-shadow:5px 5px 0 rgba(15,80,42,.22);
+  transform:translate(-2px,-2px);
+}
+.whatsapp-order:hover .whatsapp-order-arrow{
+  color:#10130f;
+  border-color:rgba(16,19,15,.45);
+}
+.whatsapp-order:focus-visible{
+  outline:3px solid #e9a34c;
+  outline-offset:5px;
+}
+.ordering-button.whatsapp-order{margin-top:28px}
+@media(max-width:760px){
+  .whatsapp-order{
+    width:100%;
+    min-width:0;
+    min-height:58px;
+    padding:0 17px;
+    font-size:13px;
+    letter-spacing:1.5px;
+  }
+  .whatsapp-order img{width:25px;height:25px;flex-basis:25px}
+}
+@media(prefers-reduced-motion:reduce){.whatsapp-order{transition:none}}
