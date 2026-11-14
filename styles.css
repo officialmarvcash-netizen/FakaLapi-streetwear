@@ -722,3 +722,61 @@ p{font-weight:400;line-height:1.8}
     letter-spacing:1.4px;
   }
 }
+
+
+/* Uploaded WhatsApp artwork — contact detail and persistent chat shortcut */
+.contact-number .contact-whatsapp-link{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  white-space:nowrap;
+}
+.contact-whatsapp-link img{
+  display:block;
+  width:27px;
+  height:27px;
+  object-fit:contain;
+}
+.floating-whatsapp{
+  position:fixed;
+  right:clamp(16px,3vw,34px);
+  bottom:clamp(86px,9vw,104px);
+  z-index:31;
+  display:flex;
+  width:58px;
+  height:58px;
+  align-items:center;
+  justify-content:center;
+  border:2px solid #fff;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 5px 18px rgba(0,0,0,.24),0 0 0 4px rgba(37,211,102,.18);
+  transition:transform .2s ease,box-shadow .2s ease;
+}
+.floating-whatsapp img{
+  display:block;
+  width:100%;
+  height:100%;
+  padding:5px;
+  object-fit:contain;
+}
+.floating-whatsapp:hover{
+  transform:translateY(-4px) scale(1.04);
+  box-shadow:0 8px 22px rgba(0,0,0,.28),0 0 0 5px rgba(37,211,102,.24);
+}
+.floating-whatsapp:focus-visible{
+  outline:3px solid #e9a34c;
+  outline-offset:5px;
+}
+@media(max-width:760px){
+  .floating-whatsapp{
+    width:52px;
+    height:52px;
+    right:15px;
+    bottom:82px;
+  }
+  .contact-whatsapp-link img{width:24px;height:24px}
+}
+@media(prefers-reduced-motion:reduce){
+  .floating-whatsapp{transition:none}
+}
