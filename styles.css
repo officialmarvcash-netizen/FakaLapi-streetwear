@@ -1315,3 +1315,89 @@ p{font-weight:400;line-height:1.8}
   .hero h1{font-size:clamp(59px,13.4vw,70px)}
   .hero-logo-panel{width:51vw;top:7%}
 }
+
+
+/* FAKA LAPI — official core colour palette
+   Deep Charcoal #191916 | Burnt Clay #C45B38
+   Warm Cream #F4F0E8 | Terracotta #9F4329
+*/
+:root{
+  --ink:#191916;
+  --paper:#F4F0E8;
+  --muted:#817B70;
+  --clay:#C45B38;
+  --clay-dark:#9F4329;
+  --olive:#191916;
+  --line:rgba(25,25,22,.14);
+  --line-strong:rgba(25,25,22,.24);
+  --line-brand:rgba(196,91,56,.42);
+  --line-brand-strong:#C45B38;
+}
+body,.about,.faq{background:#F4F0E8;color:#191916}
+.site-header,.site-footer,.hero,.manifesto,.ordering{background-color:#191916}
+.site-header{border-bottom-color:#C45B38}
+.site-footer{border-top-color:#C45B38}
+.hero{background:#191916}
+.hero:before{background:linear-gradient(90deg,rgba(25,25,22,.98),rgba(25,25,22,.9) 52%,rgba(25,25,22,.45)),repeating-linear-gradient(0deg,transparent 0 79px,rgba(244,240,232,.035) 80px 81px)}
+.hero:after{background:linear-gradient(145deg,rgba(196,91,56,.12),transparent 58%)}
+.hero h1 span,.intro h2 span,.about h2 span,.founder-copy h2 span,.manifesto h2 span{color:#C45B38}
+.hero-copy .eyebrow,.intro .eyebrow,.section-heading .eyebrow,.about .eyebrow,.contact .eyebrow,.ordering-heading .eyebrow,.faq-heading .eyebrow{color:#C45B38}
+.hero-copy .eyebrow{border-bottom-color:rgba(196,91,56,.8);color:#e5a58d}
+.hero-copy .eyebrow span{color:#C45B38}
+.hero-description{border-color:#9F4329;color:#d4cdc1}
+.hero .button-light,.button-light,.ordering-button{background:#C45B38;border-color:#C45B38;color:#fff}
+.hero .button-light:hover,.button-light:hover,.ordering-button:hover{background:#9F4329;border-color:#9F4329;color:#fff}
+.hero-logo-panel{background:#F4F0E8;border-color:#F4F0E8!important;box-shadow:14px 14px 0 #C45B38!important;transform:translateY(-50%)}
+.intro:after{background:#C45B38}
+.intro>p:last-child,.about-copy>p,.founder-copy>p:last-child{color:#625e56}
+.collection{background:#EAE4D9;border-color:rgba(196,91,56,.38)}
+.collection-card,.collection-edition{background:#F8F5EF;border-color:rgba(196,91,56,.42)}
+.collection-edition{border-left-color:#C45B38}
+.product-image{background:#E3DCD0}
+.section-heading,.faq-list,.faq-list details{border-color:rgba(196,91,56,.32)}
+.section-index,.card-kicker,.card-caption .card-kicker,.about-label span,.founder-label span,.founder-copy h3{color:#9F4329}
+.card-caption h3{color:#292720}
+.arrow{color:#C45B38}
+.catalog-note,.founder-vision{border-color:rgba(196,91,56,.4);border-left-color:#C45B38;background:rgba(255,255,255,.42)}
+.manifesto{border-color:rgba(196,91,56,.5)}
+.manifesto .eyebrow{color:#D98A6B}
+.manifesto h2 span{color:#C45B38}
+.contact{background:#C45B38;color:#fff}
+.contact:after{color:rgba(25,25,22,.09)}
+.contact .eyebrow{color:#F4F0E8}
+.contact h2 span{color:#F4F0E8}
+.contact-inner>p:not(.eyebrow){color:#fff}
+.contact-number span{color:#F4D4C6}
+.contact-number a{color:#fff}
+.contact-placeholder{border-color:rgba(244,240,232,.65)}
+.founder{background:#EAE4D9}
+.founder-vision{color:#191916!important}
+.story-language-button{background:#EAE4D9;border-color:rgba(159,67,41,.4);color:#191916}
+.story-language-button:hover,.story-language-button:focus-visible{border-color:#C45B38}
+.story-language-button.is-active{background:#191916;border-color:#C45B38;color:#F4F0E8}
+.story-language-panel,.about-language{background:#EAE4D9;border-color:rgba(196,91,56,.4);border-top-color:#C45B38}
+.story-language-panel h3,.about-language h3{color:#9F4329}
+.story-language-panel p,.about-language p{color:#625e56}
+.ordering{background:#191916;color:#F4F0E8;border-color:rgba(196,91,56,.5)}
+.ordering-heading h2 span,.faq-heading h2 span{color:#C45B38}
+.ordering-step{border-color:rgba(196,91,56,.55)}
+.ordering-step>span{color:#C45B38}
+.ordering-step p,.ordering-intro{color:#d0c8bc}
+.faq{background:#F4F0E8}
+.faq-list{border-color:rgba(196,91,56,.4)}
+.faq-list details{border-color:rgba(196,91,56,.3)}
+a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
+.collection-card{border-color:rgba(159,67,41,.38)}
+.product-image{outline-color:rgba(244,240,232,.8)}
+.new-arrivals-heading{border-color:rgba(196,91,56,.5);border-left-color:#C45B38;border-bottom-color:#C45B38}
+.new-arrivals-heading .looks-title em{color:#C45B38;-webkit-text-stroke-color:#C45B38}
+.new-arrivals-heading .section-index{color:#9F4329;border-left-color:rgba(159,67,41,.5)}
+.scroll-top{border-color:#C45B38;background:#191916;box-shadow:0 5px 18px rgba(0,0,0,.24),0 0 0 4px rgba(196,91,56,.14)}
+.scroll-top span{color:#C45B38}
+.scroll-top:hover{background:#C45B38;border-color:#F4F0E8}
+.scroll-top:focus-visible{outline-color:#C45B38}
+.hero-bottom span:last-child{color:#D98A6B}
+@media(max-width:760px){
+  .hero-logo-panel{box-shadow:8px 8px 0 #C45B38!important}
+  .contact{background:#C45B38}
+}
