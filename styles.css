@@ -522,3 +522,17 @@ p{font-weight:400;line-height:1.8}
   }
   .new-arrivals-heading .section-index{padding-bottom:0}
 }
+
+
+/* FAKA LAPI — rebuilt new-arrivals masthead */
+.new-arrivals-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;position:relative;overflow:hidden;margin-top:54px;margin-bottom:30px;padding:27px 30px 25px;background:#1d1c18;border:1px solid rgba(217,101,61,.48);border-left:7px solid #d9653d;border-bottom:4px solid #d9653d;box-shadow:8px 8px 0 rgba(169,67,39,.13)}
+.new-arrivals-heading:before{content:"";position:absolute;width:230px;height:230px;right:8%;top:-165px;border:1px solid rgba(217,101,61,.22);border-radius:50%;box-shadow:0 0 0 22px rgba(217,101,61,.035),0 0 0 44px rgba(217,101,61,.025);pointer-events:none}
+.new-arrivals-heading:after{content:"";position:absolute;right:0;bottom:0;width:34%;height:4px;background:linear-gradient(90deg,transparent,#e9a34c)}
+.new-arrivals-heading>div{position:relative;z-index:1}
+.new-arrivals-heading .eyebrow{display:inline-block;margin:0 0 12px;padding:5px 10px 4px;color:#f3b078;background:rgba(217,101,61,.15);border:1px solid rgba(217,101,61,.48);font-family:"Barlow Condensed",sans-serif;font-size:11px;font-weight:700;line-height:1;letter-spacing:3px}
+.new-arrivals-heading .looks-title{display:flex;flex-wrap:wrap;align-items:baseline;gap:0 .22em;margin:0;color:#f5f0e7;font-family:"Anton","Barlow Condensed",Impact,sans-serif;font-size:clamp(48px,7.2vw,88px);font-weight:400;line-height:.94;letter-spacing:.005em;text-transform:uppercase}
+.new-arrivals-heading .looks-title span:first-child{color:#e9a34c;font-family:"Barlow Condensed",sans-serif;font-size:.38em;font-weight:800;letter-spacing:.12em;transform:translateY(-.15em)}
+.new-arrivals-heading .looks-title span:nth-child(2){color:#f5f0e7}
+.new-arrivals-heading .looks-title em{color:#e66b43;font-family:"Anton","Barlow Condensed",Impact,sans-serif;font-size:1em;font-style:normal;letter-spacing:.015em;-webkit-text-stroke:.4px #e66b43}
+.new-arrivals-heading .section-index{position:relative;z-index:1;flex:0 0 auto;margin:0 0 5px;padding:8px 0 8px 16px;color:#e9a34c;border-left:1px solid rgba(233,163,76,.55);font-family:"Barlow Condensed",sans-serif;font-size:12px;font-weight:600;letter-spacing:2px;white-space:nowrap}
+@media(max-width:760px){.new-arrivals-heading{align-items:flex-start;flex-direction:column;gap:15px;margin-top:38px;margin-bottom:22px;padding:21px 18px 18px;border-left-width:5px;box-shadow:5px 5px 0 rgba(169,67,39,.13)}.new-arrivals-heading .eyebrow{margin-bottom:10px;font-size:10px}.new-arrivals-heading .looks-title{gap:0 .16em;font-size:clamp(43px,11.5vw,70px);line-height:1}.new-arrivals-heading .looks-title span:first-child{font-size:.34em}.new-arrivals-heading .section-index{margin:0;padding:0 0 0 10px;font-size:10px}}
