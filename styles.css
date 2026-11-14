@@ -1558,3 +1558,52 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
 /* NEW DROP 04 — preserve the full portrait so the bucket hat and T-shirt remain visible */
 .product-image--drop-four{background:#d99b9e!important}
 .product-image--drop-four img{object-fit:contain!important;object-position:center center!important;padding:0!important;transform:none!important}
+
+
+/* WELCOME LOGO — high-contrast, fully visible on desktop and mobile */
+.hero .hero-logo-panel{
+  z-index:3!important;
+  display:flex!important;
+  align-items:center!important;
+  justify-content:center!important;
+  width: min(36vw, 440px)!important;
+  max-width:none!important;
+  aspect-ratio:1 / 1!important;
+  height:auto!important;
+  top:50%!important;
+  right:8%!important;
+  padding:clamp(22px,3vw,38px)!important;
+  opacity:1!important;
+  visibility:visible!important;
+  transform:translateY(-50%)!important;
+  overflow:visible!important;
+  background:radial-gradient(circle at 50% 45%,#292821 0%,#171713 62%,#10100e 100%)!important;
+  border:1.5px solid rgba(214,180,90,.85)!important;
+  outline:1px solid rgba(214,180,90,.28)!important;
+  outline-offset:7px!important;
+  box-shadow:0 0 0 1px rgba(0,0,0,.55),0 22px 55px rgba(0,0,0,.48),12px 12px 0 rgba(214,180,90,.22)!important;
+}
+.hero .hero-logo-panel img{
+  display:block!important;
+  width:100%!important;
+  height:100%!important;
+  max-width:100%!important;
+  max-height:100%!important;
+  object-fit:contain!important;
+  opacity:1!important;
+  visibility:visible!important;
+  filter:drop-shadow(0 4px 12px rgba(0,0,0,.45));
+}
+@media (max-width: 700px){
+  .hero .hero-logo-panel{
+    top:7%!important;
+    right:50%!important;
+    width:min(58vw,260px)!important;
+    max-width:260px!important;
+    padding:16px!important;
+    transform:translateX(50%)!important;
+    opacity:1!important;
+    aspect-ratio:1 / 1!important;
+    box-shadow:8px 8px 0 rgba(214,180,90,.25),0 14px 35px rgba(0,0,0,.4)!important;
+  }
+}
