@@ -2118,3 +2118,22 @@ a.product-order-link:focus-visible,:focus-visible{outline-color:#C45B38}
 @media(max-width:380px){
   .hero .hero-logo-panel{width:min(35vw,128px)!important}
 }
+
+
+/* CONTACT SECTION — standalone logo, remove framed panel */
+.contact-logo-panel{
+  background:transparent!important;
+  border:0!important;
+  outline:0!important;
+  outline-offset:0!important;
+  box-shadow:none!important;
+  padding:0!important;
+}
+.contact-logo-panel img{filter:none!important}
+@media(max-width:760px){
+  .contact-logo-panel{
+    width:min(34vw,125px)!important;
+    max-width:125px!important;
+    margin:0 auto 24px!important;
+  }
+}
